@@ -1,0 +1,26 @@
+{
+    "name": "next-app",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:22-bookworm",
+    "runArgs": [
+        "--name=next-app",
+        "--network=host"
+    ],
+    "containerEnv": {
+        "TZ": "America/Vancouver"
+    },
+    "postCreateCommand": ".devcontainer/postCreateCommand.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "biomejs.biome", //Biome
+                "wallabyjs.console-ninja", //Console Ninja for console.log() next to code
+                "formulahendry.auto-rename-tag", //Auto Rename Tag
+                "cardinal90.multi-cursor-case-preserve", //Multi Cursor Case Preserve
+                "bradlc.vscode-tailwindcss", //Tailwind
+                "dsznajder.es7-react-js-snippets", // React Snippets
+                "github.vscode-github-actions" // GitHub Actions
+            ]
+        }
+    },
+    "shutdownAction": "stopContainer"
+}
