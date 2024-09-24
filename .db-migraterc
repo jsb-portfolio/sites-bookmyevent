@@ -1,4 +1,0 @@
-{
-    "migrations-dir": "db-migrate/migrations",
-    "configFile": "db-migrate/db-migrate.json"
-}
